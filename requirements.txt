@@ -1,0 +1,4 @@
+npm install react router dom
+npm install dotenv
+npm install firebase-admin mongoose express 
+npm install axios
