@@ -29,9 +29,9 @@ export default function Feed() {
           <div key={item._id} className="card">
             {item.imageurl && (<img src={item.imageurl} alt="issue" className="feed-img"/>)}
             <h3>{item.title}</h3>
-            <p>{item.description}</p>
-            <p>Status: {item.status}</p>
-            <p>Upvotes: {item.upvotes}</p>
+            <p>{item.description}
+            </p><p><b>Status:</b> {item.status}</p>
+              <p><b>👍 {item.upvotes}</b></p>
 
             <button
               className="btn"
