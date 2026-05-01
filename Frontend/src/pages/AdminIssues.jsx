@@ -4,7 +4,6 @@ import axios from "axios";
 export default function AdminIssues() {
   const [issues, setIssues] = useState([]);
 
-  // ✅ FETCH FROM BACKEND
   const fetchIssues = async () => {
     try {
       const res = await axios.get("http://localhost:5000/api/grievances");
@@ -18,7 +17,7 @@ export default function AdminIssues() {
     fetchIssues();
   }, []);
 
-  // ✅ UPDATE STATUS
+  
   const updateStatus = async (id, newStatus) => {
     try {
       await axios.put(`http://localhost:5000/api/grievances/${id}/status`, {
@@ -31,7 +30,6 @@ export default function AdminIssues() {
     }
   };
 
-  // ✅ DELETE
   const deleteIssue = async (id) => {
     try {
       await axios.delete(`http://localhost:5000/api/grievances/${id}`);

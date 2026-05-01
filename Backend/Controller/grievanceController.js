@@ -29,7 +29,8 @@ exports.getGrievances = async (req, res) => {
 //Updating the status (admin side!!)
 exports.updateStatus = async (req, res) => {
     try {
-                const { status } = req.body;
+        
+        const { status } = req.body;
         const updates = await Grievance.findByIdAndUpdate(req.params.id, { status });
         if (!updates) {
         return res.status(404).json({ message: "Grievance not found" });
