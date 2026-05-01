@@ -79,7 +79,7 @@ L.Icon.Default.mergeOptions({
         <MapContainer
           center={[19.076, 72.8777]}
           zoom={13}
-          className="leaflet-map"   // 🔥 IMPORTANT
+          className="leaflet-map"   
         >
           <ResizeMap />
 
